@@ -1,0 +1,36 @@
+.pulse-button{
+    position: fixed;
+    right: 2.5%;
+    bottom: 3%;
+    margin-left: -20px;
+    margin-top: -20px;
+    display: block;
+    width: 60px;
+    height: 60px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 1px 0 #4b2042;
+    border: 1px solid #a46497;
+    box-shadow: 0 0 0 0 #ff52ee, inset 0 1px 0 #ff52ee;
+    border-radius: 100%;
+    vertical-align: middle;
+    background: #ff52ee;
+    background-image: linear-gradient(#ff52ee, #a46497);
+    cursor: pointer;
+    animation: pulse 1s infinite cubic-bezier(0.6, 0, 0, 1);
+	z-index: 20;
+}
+
+.pulse-button:hover {
+animation:none;
+}
+
+@keyframes pulse{
+to{
+box-shadow:0 0 0 15px rgba(90, 153, 220, 0), inset 0 1px 0 #ff52ee}
+
+}
+.lul {
+	background: url(./img/mini.png) no-repeat;
+	
+}

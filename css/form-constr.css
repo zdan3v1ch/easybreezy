@@ -1,0 +1,31 @@
+.constructor {
+	display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    min-height: 30vh;
+}
+
+.constructor div {
+	display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-width: 270px;
+    min-height: 7vh;
+    margin-bottom: 10px;
+}
+
+.constructor input[type=file] {
+	width: 270px;
+}
+
+.constructor input[type=submit] {
+	background-color: #a46497;
+    color: #fff;
+	height: 35px;
+    border-radius: 7px;
+}
+.constructor input[type=submit]:hover {   
+	background-color: #96588a;
+    color: #fff;
+	}

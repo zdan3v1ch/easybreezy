@@ -1,0 +1,260 @@
+/*
+theme name: EasyBreazy
+description: EasyBreazy store
+Author: Анатолий
+version: 1
+*/
+@font-face{ 
+      font-family: 'FA5BR';
+		src: url('fonts/FontAwesome5Brands-Regular-400.otf');
+}
+@font-face{ 
+      font-family: 'play';
+      	src: url('fonts/Play-Regular.ttf');
+}
+
+
+
+body, .orderby, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, input {
+	font-family: play;
+}
+
+header {
+	top:-80px;
+  	transition: top 1s;
+	display: flex;
+	justify-content: space-between;
+	height: 120px;
+	min-width: 100%;
+	background-color: rgba(210, 184, 168, 1);
+}
+
+.menu-scroll {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 3;
+	background-color: rgba(210, 184, 168, .95);
+}
+
+mark {
+	background: #FF52EE;
+}
+
+.header-logo {
+	margin-left: 5vw; 
+}
+.header-logo a {
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	width: 252px;
+	height: 100%;
+	transition: transform .5s;
+}
+.header-logo a img {
+	height: 70%;
+}
+.header-logo a:hover {
+	transform: rotate(7deg);
+}
+
+
+.per-acc {
+	width: 17vw;
+	margin-right: 3vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+.user a {
+	background: url(img/user.svg) no-repeat;
+    display: block;
+    height: 23px;
+    width: 21px;
+		
+}
+.basket a {
+	background: url(img/basket.svg) no-repeat;
+    display: block;
+    height: 23px;
+    width: 32px;
+		
+}
+
+.wrapper {
+	min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.wrapper nav {
+	display: flex;
+}
+.top-nav {
+	padding-top: 32px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.down {
+	top: 5px;
+	right: 20px;
+	height: 25px;
+	width: 25px;
+	background: url('icons/arrow.svg') no-repeat;
+	position: absolute;
+
+}
+.top-nav > li > a {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	height: 56px;
+	width: 15vw;
+	font-size: 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #FFF7F2;
+	text-align: center;
+	
+}
+.top-nav .current-menu-item > a {
+	color: #62FF49;
+	
+}
+.current-menu-item  .down {
+	background: url('icons/arrow2.svg') no-repeat;
+}
+
+.top-nav a:hover {
+	text-decoration: none;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+ 	border-radius: 4px;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 11;
+	background-color: #D2B8A8;
+}
+
+.sub-menu li {
+	height: 40px;
+}
+.sub-menu li a {
+	display: flex;
+    height: 100%;
+    width: 100%;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFF7F2;
+    text-align: center;
+    font-size: 16px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top-nav li:first-child:hover .sub-menu {
+	display: block;
+}
+
+
+#menu-item-236 {
+	position: relative;
+}
+.article-post {
+	background: #FFF7F2;
+	height: 100vh;
+}
+.wrap {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	
+}
+.main-left{
+	margin-left: 5vw; 
+	height: 100%;
+	min-width: 40%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 36px;
+	position: relative;
+}
+
+.main-right {
+	margin-right: 3vw;
+	background: url('img/main.png');
+	background-size: cover;
+	height: 100%;
+	width: 696px;
+}
+
+.main-left-catalog a, .main-left-text {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 400px;
+	height: 100px;
+	color: #635349;
+	
+}
+.main-left-catalog {
+	margin-top: 100px;
+}
+.main-left-catalog a {
+	text-decoration: none;
+	border-radius: 10px;
+	background-color: #FF52EE;
+	color: #FFF7F2;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.main-left-catalog a:hover {
+	color: #FF52EE;
+	background-color: #FFF7F2;
+	border: solid 3px #FF52EE;
+	box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+}
+.main-left-text {
+	padding-top: 232px;
+}
+.main-left div:last-child {
+	position: absolute;
+	height: 84px;
+	width: 84px;
+	right: 50px;
+	bottom: 100px;
+	background: url('icons/smile.svg') no-repeat;
+}
+.main-left-text p span {
+	background: 100% url('icons/text.svg') no-repeat;
+}
+header a:hover .down {
+	background: url('icons/arrow3.svg') no-repeat;
+	
+} 
+header .top-nav li a:hover {
+	color: #635349;
+}
+.user a:hover {
+	background: url('icons/user3.svg') no-repeat;
+}
+.basket a:hover {
+	background: url('icons/basket3.svg') no-repeat;
+}
+.user a.test {
+	background: url('icons/user2.svg') no-repeat;
+}
+.basket a.test {
+	background: url('icons/basket2.svg') no-repeat;
+}

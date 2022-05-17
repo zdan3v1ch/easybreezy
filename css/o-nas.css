@@ -1,0 +1,22 @@
+.full-o-nas {
+	display: flex;
+    justify-content: space-between;
+}
+
+.o-nas {
+	display: flex;
+    flex-direction: column;
+    font-size: 22px;
+}
+
+.o-nas p {
+	display: inline-block;
+	margin: 10px 0;
+}
+.o-nas p a {
+	text-decoration: none;
+	color: #635349;
+}
+.o-nas p a:hover {
+	color: #FF52EE;
+}

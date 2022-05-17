@@ -1,0 +1,101 @@
+#myModal2
+{
+    width: 450px; height: 330px;
+    padding: 18px 9px;
+    border-radius: 4px;
+    background: #FFF7F2;
+	color: #635349;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin: auto;
+    display: none;
+    opacity: 0;
+    z-index: 100;
+    text-align: center;
+    
+}
+
+#myModal2 #myModal__close2
+{
+    width: 21px; height: 21px;
+    position: absolute;
+    font-size: 29px;
+    top: -8px; right: -29px;
+    cursor: pointer;
+    display: block;
+    border-radius: 9999px;
+    background-image: url(../icons/krest.png);
+    background-size: 100%;
+}
+.close:hover {
+    animation: closer 0.5s linear;
+}
+
+#myOverlay2
+{
+    z-index: 37;
+    position: fixed;
+    background: rgba(0,0,0,.7);
+    width: 100%; height: 100%;
+    top: 0; left: 0;
+    cursor: pointer;
+    display: none;
+}
+.container * 
+{
+    box-sizing: border-box
+}
+
+.container 
+{
+    padding: 16px;
+}
+
+#first_form input[type=text], #first_form input[type=password], #two_form input[type=text], #two_form input[type=password] 
+{
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0 5px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+#first_form input[type=text]:focus, #first_form input[type=password]:focus, #two_form input[type=text]:focus, #two_form input[type=password]:focus 
+{
+    background-color: #ddd;
+    outline: none;
+}
+
+
+hr 
+{
+    border: 1px solid #f1f1f1;
+}
+
+.registerbtn 
+{
+    font-family: play;
+	background-color: #a46497;
+    color: #fff;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover 
+{
+    opacity:1;
+}
+
+.container div
+{
+    margin: 10px 0;
+}
+@keyframes closer {
+    from {transform: rotate(0deg); }
+    to {transform: rotate(90deg);}
+}

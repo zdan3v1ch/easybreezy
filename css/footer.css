@@ -1,0 +1,105 @@
+footer {
+	background-color: #D2B8A8;
+	height: 150px;
+}
+footer a:hover {
+	color: #FFF7F2;
+}
+.wrap-footer {
+	display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 5vw;
+    margin-right: 3vw;
+    height: 100%;
+}
+
+.col-left, .col-right {
+	max-height: 100%;
+	padding-top: 20px;
+}
+.col-right {
+	display: flex;
+	width: 45%;
+	justify-content: space-between;
+	position: relative;
+}
+.logo-bot { 
+	 position: absolute;
+    bottom: -84px;
+    left: 0;
+    background: url(../img/logobot.svg) no-repeat;
+	background: url(../img/logobot01.svg) no-repeat;
+    width: 461px;
+    height: 74px;
+/* 	background: url(../img/logobot0.png) no-repeat; */
+	
+    background-size: 100%
+}
+.col-left {
+	width: 55%;
+}
+
+.footer-nav {
+	padding-left: 0;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.footer-nav li {
+	width: 50%;
+}
+.social {
+	list-style: none;
+	padding-left: 0;
+}
+.social li {
+		
+	display: inline-block;
+	margin-right: 10px;
+	
+}
+.social li:last-child {
+	margin-right: 0;
+}
+.social a span {
+	display: block;
+	transition: transform .5s;
+	text-decoration: none;
+}
+.social a:hover span {
+	transform: rotate(30deg);
+	color: #A2F295;
+}
+.footer-nav a, .phone a {
+	display: block;
+	padding: 10px 0;
+	font-size: 24px;
+	text-decoration: none;
+	color: #635349;
+}
+.footer-nav li:nth-child(even) a {
+	text-align: center;
+}
+.social li a {
+	text-decoration: none;
+
+}
+.ca-icon {
+	display: block;
+	font-family: FA5BR;
+	font-size: 40px;
+	color: #FFF7F2;
+}
+
+.telegram::before {
+  content: "\f3fe"; 
+}
+.vk::before {
+  content: "\f189"; 
+}
+.instagram::before {
+  content: "\f16d"; 
+}
